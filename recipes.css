@@ -1,0 +1,309 @@
+/* Navbar Container */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: darkorange;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+/* Left: Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo i {
+  font-size: 24px;
+}
+
+/* Center: Search */
+.search-form {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 400px;
+  
+}
+
+.search-form input {
+  border: none;
+  padding: 10px 15px;
+  flex: 1;
+  outline: none;
+}
+
+.search-form button {
+  background: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: darkorange;
+  font-size: 18px;
+}
+
+.search-form button:hover {
+  color: darkred;
+}
+
+/* Right: Navigation Links */
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Heart Link */
+.fav-link i {
+  color: red;
+  margin-right: 5px;
+}
+
+/* Highlight style */
+.highlight {
+  font-weight: bold;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Responsive (Optional)
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-form {
+    width: 100%;
+    margin: 10px 0;
+  }
+} */
+ .hero {
+  background-image: url('Food images/foodstuff.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: darkorange;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: orangered;
+}
+
+
+
+/* Recipes Section */
+.pop-recipes {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.zuch{
+    font-size: 15px;
+    color: darkgray;
+}
+
+.zucchini a,
+.parm a,
+.tomato a,
+.succotash a,
+.ham-melon a,
+.squash a {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+.zucchini a:hover,
+.parm a:hover,
+.tomato a:hover,
+.succotash a:hover,
+.ham-melon a:hover,
+.squash a:hover {
+  text-decoration: underline;
+  text-decoration-color: darkorange;
+}
+
+.zucchini,
+.parm,
+.tomato,
+.succotash, 
+.ham-melon, 
+.squash  {
+  position: relative;
+}
+.fas.fa-star{
+    color: gold;
+    font-size: 10px;
+}
+.zucchini,
+.parm,
+.tomato,
+.succotash, 
+.ham-melon, 
+.squash  {
+  margin: 10px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.heart-icon i {
+  color: white;
+  cursor: pointer;
+}
+.heart-icon i:hover {
+  color: hotpink;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: darkorange;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

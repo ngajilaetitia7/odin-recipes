@@ -1,0 +1,208 @@
+/* Navbar Container */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: darkorange;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+/* Left: Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo i {
+  font-size: 24px;
+}
+
+/* Center: Search */
+.search-form {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 400px;
+  
+}
+
+.search-form input {
+  border: none;
+  padding: 10px 15px;
+  flex: 1;
+  outline: none;
+}
+
+.search-form button {
+  background: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: darkorange;
+  font-size: 18px;
+}
+
+.search-form button:hover {
+  color: darkred;
+}
+
+/* Right: Navigation Links */
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Heart Link */
+.fav-link i {
+  color: red;
+  margin-right: 5px;
+}
+
+/* Highlight style */
+.highlight {
+  font-weight: bold;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.recipe-detail {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fas.fa-star {
+  color: gold;
+  
+}
+.tom {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.prep-time{
+background-color: whitesmoke;
+padding: 20px;
+border-radius: 5px;
+}
+
+.ingredients{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+h2,
+h3,
+td{
+  color: darkorange;
+}
+
+th, td{
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-home {
+  text-align:left;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darkorange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: darkred;
+}
